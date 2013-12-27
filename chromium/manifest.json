@@ -17,5 +17,5 @@
    "offline_enabled": true,
    "permissions": [ "tabs", "clipboardWrite" ],
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "1.6.1"
+   "version": "1.7.0"
 }

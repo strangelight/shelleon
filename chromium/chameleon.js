@@ -127,8 +127,8 @@
 		return str;
 	}
 
-	function ensurenumberandletter(s) {
-	    var numbers = "123456789";
+	function ensurenumberandletter(s) { // dZ7LwMkdoQ
+		var numbers = "123456789";
 	    var letters = "ABCDEFGHIJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz";
 	    var punct = "?!#@&$";
 	    var hasnumber = 0;
@@ -143,16 +143,20 @@
 	        if (punct.indexOf(s[i]) > -1)
 	            haspunct = 1;
 	    }
-	    if (hasnumber == 0)
-	        s = "1" + s.substring(1);
-	    if (hasletter == 0)
+	    if (hasnumber == 0){
+	        s = "1" + s.substring(1); 
+			return ensurenumberandletter(s);
+		}
+		if (hasletter == 0){
 	        s = s.substring(0, 1) + "a" + s.substring(2);
-	    if (haspunct == 0)
+			return ensurenumberandletter(s);
+		}
+	    if (haspunct == 0){
 	        s = s.substring(0, 2) + "@" + s.substring(3);
-
+			return ensurenumberandletter(s);
+		}
 	    return s;
 	}
-
 	function shortenurl(url) {
 	    // remove protocol (http://, ftp://, etc)
 	    if (url.indexOf("//") > -1)
