@@ -1,0 +1,21 @@
+{
+   "browser_action": {
+      "default_icon": "ChameleonIcon_19x19.png",
+      "default_popup": "popup.html",
+      "default_title": "Password Chameleon"
+   },
+   "description": "Password Generator",
+   "homepage_url": "http://passwordchameleon.com",
+   "icons": {
+      "128": "ChameleonIcon_128x128.png",
+      "16": "ChameleonIcon_16x16.png",
+      "48": "ChameleonIcon_48x48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDd8ax1ZGuGMaMGxm2n/ByYhUUy7cmdaCTUhtW7WpQbK5KHHFjsqSGP/M7xn1XPFRM2mxvks9ldMaLVsdMvspt8IrDAtA+sC0bxnWOKJdqDV5rpUeUZ5CvU4RYmp/eF+obtI2iVZI1Pwh/isItJTltr9vt4D3E2vQ3+tlnUEwTCoQIDAQAB",
+   "manifest_version": 2,
+   "name": "Password Chameleon",
+   "offline_enabled": true,
+   "permissions": [ "tabs", "clipboardWrite" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.6.1"
+}
