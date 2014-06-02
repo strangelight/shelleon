@@ -4,7 +4,7 @@
 ### Install
 
 ```
-go install github.com/danielvargas/passwordchameleon/shelleon
+go get github.com/dgv/passwordchameleon/shelleon
 ```
 
 ### Usage
