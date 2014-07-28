@@ -8,7 +8,8 @@ import (
 	"fmt"
 	"os"
 	"strings"
-
+	
+	"github.com/atotto/clipboard"
 	"code.google.com/p/gopass"
 )
 
@@ -53,7 +54,7 @@ func main() {
 	for passwd == "" {
 		if passwd, err := gopass.GetPass(os.Args[1] + " password: "); err == nil {
 			if passwd != "" {
-				fmt.Println(generate(passwd, os.Args[1]))
+				clipboard.WriteAll(generate(passwd, os.Args[1]))
 				break
 			}
 		} else {
